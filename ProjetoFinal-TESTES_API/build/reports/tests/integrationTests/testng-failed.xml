@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Gradle suite]" verbose="0">
+  <test thread-count="5" name="Gradle test(failed)" verbose="0">
+    <classes>
+      <class name="GarageAPI.GetClientsNegativeTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="cleanup"/>
+          <include name="getAllClients_Client2VehicleNotActive_Test"/>
+        </methods>
+      </class> <!-- GarageAPI.GetClientsNegativeTests -->
+    </classes>
+  </test> <!-- Gradle test(failed) -->
+</suite> <!-- Failed suite [Gradle suite] -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-08T18:59:28 WEST" name="Gradle suite" finished-at="2024-06-08T18:59:29 WEST" duration-ms="753">
+    <groups>
+    </groups>
+    <test started-at="2024-06-08T18:59:28 WEST" name="Gradle test" finished-at="2024-06-08T18:59:29 WEST" duration-ms="753">
+      <class name="GarageAPI.GetClientsPositiveTests">
+        <test-method signature="getAllClientsTest()[pri:0, instance:GarageAPI.GetClientsPositiveTests@41c2284a]" started-at="2024-06-08T18:59:29 WEST" name="getAllClientsTest" description="Get all clients with success" finished-at="2024-06-08T18:59:29 WEST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClientsTest -->
+      </class> <!-- GarageAPI.GetClientsPositiveTests -->
+      <class name="GarageAPI.GetClientsNegativeTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:GarageAPI.GetClientsNegativeTests@671a5887]" started-at="2024-06-08T18:59:28 WEST" name="setUp" finished-at="2024-06-08T18:59:29 WEST" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="getAllClients_Client1NegativeID_Test()[pri:0, instance:GarageAPI.GetClientsNegativeTests@671a5887]" started-at="2024-06-08T18:59:29 WEST" name="getAllClients_Client1NegativeID_Test" description="Get all clients, check for client 1 wrong ID" finished-at="2024-06-08T18:59:29 WEST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClients_Client1NegativeID_Test -->
+        <test-method signature="getAllClients_Client2NegativeID_Test()[pri:0, instance:GarageAPI.GetClientsNegativeTests@671a5887]" started-at="2024-06-08T18:59:29 WEST" name="getAllClients_Client2NegativeID_Test" description="Get all clients, check for client 2 wrong ID" finished-at="2024-06-08T18:59:29 WEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClients_Client2NegativeID_Test -->
+        <test-method signature="getAllClients_Client2VehicleNotActive_Test()[pri:0, instance:GarageAPI.GetClientsNegativeTests@671a5887]" started-at="2024-06-08T18:59:29 WEST" name="getAllClients_Client2VehicleNotActive_Test" description="Get all clients, check for client 2, vehicle not active" finished-at="2024-06-08T18:59:29 WEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllClients_Client2VehicleNotActive_Test -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:GarageAPI.GetClientsNegativeTests@671a5887]" started-at="2024-06-08T18:59:29 WEST" name="cleanup" finished-at="2024-06-08T18:59:29 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- GarageAPI.GetClientsNegativeTests -->
+    </test> <!-- Gradle test -->
+  </suite> <!-- Gradle suite -->
+</testng-results>

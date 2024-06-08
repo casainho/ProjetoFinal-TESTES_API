@@ -1,0 +1,38 @@
+plugins {
+  id 'java'
+  id 'io.freefair.lombok' version '5.3.3.3'
+}
+
+sourceCompatibility = 1.8  // Set to your desired Java version (e.g., 1.8)
+targetCompatibility = 1.8  // Set to your desired Java version (e.g., 1.8)
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+  implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+  implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.0'
+  implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+  implementation 'org.hamcrest:hamcrest:2.2'
+  testImplementation 'org.testng:testng:7.4.0'
+  testImplementation 'org.testng:testng:7.4.0'
+  testImplementation 'junit:junit:4.9'
+}
+
+test {
+  useTestNG()
+}
+
+
+task integrationTests(type: Test) {
+  scanForTestClasses = false
+  useTestNG() {
+    useDefaultListeners = true
+  }
+  testLogging.showStandardStreams = true
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GarageAPI.GetClientsPositiveTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-08T17:42:47" hostname="cas-1" time="0.749">
+  <properties/>
+  <testcase name="getAllClientsTest" classname="GarageAPI.GetClientsPositiveTests" time="0.749"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: --> GET http://localhost:8080/client
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: --> END GET
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: <-- 200 http://localhost:8080/client (72ms)
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: Transfer-Encoding: chunked
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: Date: Sat, 08 Jun 2024 17:42:48 GMT
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: Keep-Alive: timeout=60
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: Connection: keep-alive
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: 
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: [{"id":1,"firstName":"Afonso","lastName":"Silva","address":"Rua da Esquina","postalCode":"3810-700","city":"Aveiro","country":"Portugal","phoneNumber":966111222,"nif":212212212,"birthDate":"1983-01-01","clientDate":"2001-05-05","vehicles":[{"id":1,"client":1,"brand":"Fiat","model":"Punto","plateYear":1999,"type":"Hatchback","plate":"ZE-10-20","active":true},{"id":2,"client":1,"brand":"Opel","model":"Corsa","plateYear":2002,"type":"Hatchback","plate":"34-CB-45","active":true}]},{"id":2,"firstName":"Maria","lastName":"Lopes","address":"Avenida Principal","postalCode":"4350-334","city":"Porto","country":"Portugal","phoneNumber":911222333,"nif":222333444,"birthDate":"1997-09-12","clientDate":"2010-07-01","vehicles":[{"id":3,"client":2,"brand":"Peugeot","model":"504","plateYear":1988,"type":"Van","plate":"PI-88-60","active":false}]}]
+Jun 08, 2024 6:42:48 PM okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (840-byte body)
+]]></system-err>
+</testsuite>
