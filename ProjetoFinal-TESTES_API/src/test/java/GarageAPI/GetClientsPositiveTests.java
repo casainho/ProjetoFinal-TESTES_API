@@ -1,27 +1,34 @@
 package GarageAPI;
-import api.mappings.garage.Client;
+import api.mappings.garage.ClientWithVehicles;
 import api.mappings.garage.Vehicle;
+import api.retrofit.garage.Clients;
+import api.retrofit.garage.apiDatabase;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import retrofit2.Response;
+
+import java.io.IOException;
 import java.util.List;
-import static api.retrofit.garage.Clients.getAllClients;
 import static api.validators.ResponseValidator.assertOk;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-
 public class GetClientsPositiveTests {
 
-    @Test(description = "Get all clients with success")
-    public void getAllClientsTest() {
+    @BeforeClass
+    static public void setUp() throws IOException, InterruptedException {
 
-        Response<List<Client>> response = getAllClients();
+    }
+
+    @Test(description = "Get all clients with success", enabled = true)
+    public void getAllClientsWithVehiclesTest() {
+        Response<List<ClientWithVehicles>> response = new Clients().getAllClientsWithVehicles();
         assertOk(response);
 
         assertThat("Body should not be null", response.body(), notNullValue());
-        List<Client> clients = response.body();
+        List<ClientWithVehicles> clientWithVehicles = response.body();
 
         // Client 1
-        Client client1 = clients.get(0);
+        ClientWithVehicles client1 = clientWithVehicles.get(0);
 
         // ID
         int id = 1;
@@ -52,7 +59,7 @@ public class GetClientsPositiveTests {
         assertThat(String.format("Vehicle id should be %d", id), vehicle2_Client1.getId(), is(id));
 
         // Client 2
-        Client client2 = clients.get(1);
+        ClientWithVehicles client2 = clientWithVehicles.get(1);
 
         // First name
         name = "Lopes";

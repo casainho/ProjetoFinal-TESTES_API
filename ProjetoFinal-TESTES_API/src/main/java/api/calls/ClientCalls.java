@@ -1,6 +1,8 @@
 package api.calls;
 
 import api.mappings.garage.Client;
+import api.mappings.garage.ClientWithVehicles;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.*;
 
@@ -12,11 +14,11 @@ public interface ClientCalls {
     String ID = "id";
 
     @GET(CLIENT)
-    Call<List<Client>> getClients();
+    Call<List<ClientWithVehicles>> getClients();
 
     @POST(CLIENT)
-    Call<Client> createClient(@Body Client client);
+    Call<Integer> createClient(@Body Client client);
 
-    @GET(CLIENT_ID)
-    Call<Client> getClient(@Path(ID) Integer id);
+    @DELETE(CLIENT_ID)
+    Call<ResponseBody> deleteClient(@Path(ID) Integer id);
 }

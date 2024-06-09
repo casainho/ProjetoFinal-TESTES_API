@@ -29,10 +29,10 @@ public class ResponseValidator {
     public static void assertOk(Response response) {
         assertThat(String.format("Expected response code to be [%s] but was [%s]", HTTP_OK, response.code()), response.code(), is(HTTP_OK));
     }
-//
-//    public static void assertCreated(Response response) {
-//        assertThat(String.format("Expected response code to be [%s] but was [%s]", HTTP_CREATED, response.code()), response.code(), is(HTTP_CREATED));
-//    }
+
+    public static void assertCreated(Response response) {
+        assertThat(String.format("Expected response code to be [%s] but was [%s]", HTTP_CREATED, response.code()), response.code(), is(HTTP_CREATED));
+    }
 //
 //    public static void assertAccepted(Response response) {
 //        assertThat(String.format("Expected response code to be [%s] but was [%s]", HTTP_ACCEPTED, response.code()), response.code(), is(HTTP_ACCEPTED));
